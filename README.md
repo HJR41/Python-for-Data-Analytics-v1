@@ -4,7 +4,7 @@
 To identify the most in-demand skills for the top three most popular data roles, I first filtered the positions based on popularity. Then, I extracted the top five skills for each of these three roles. The query highlights the most sought-after job titles and their key skills, helping me determine which skills to focus on based on my target role.
 
 View the notebook with steps here:
-[2_Skills_Count.ipynb](3_Project\2_Skills_Count.ipynb)
+[2_Skills_Count.ipynb](3_Project/2_Skills_Count.ipynb)
 
 ### Visualise Data
 
@@ -26,7 +26,7 @@ plt.show()
 ```
 ### Results
 
-![Visualisation for Top Skills of Data Roles](3_Project\images\skill_demand.png)
+![Visualisation for Top Skills of Data Roles](3_Project/images/skill_demand.png)
 
 ### Insights
 
