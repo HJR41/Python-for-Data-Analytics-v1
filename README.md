@@ -4,7 +4,7 @@
 To identify the most in-demand skills for the top three most popular data roles, I first filtered the positions based on popularity. Then, I extracted the top five skills for each of these three roles. The query highlights the most sought-after job titles and their key skills, helping me determine which skills to focus on based on my target role.
 
 View the notebook with steps here:
-[2_Skills_Count.ipynb](3_Project\2_Skills_Count.ipynb)
+[2_Skills_Count.ipynb](3_Project/2_Skills_Count.ipynb)
 
 ### Visualise Data
 
@@ -26,7 +26,7 @@ plt.show()
 ```
 ### Results
 
-![Visualisation for Top Skills of Data Roles](3_Project\images\skill_demand.png)
+![Visualisation for Top Skills of Data Roles](3_Project/images/skill_demand.png)
 
 ### Insights
 
@@ -50,3 +50,37 @@ SQL ranks second at 44%, reflecting the need for data scientists to query and ma
 SQL is universally important across all three roles, but it’s especially critical for Data Engineers (70%).
 Python is indispensable for Data Scientists (69%) and also highly valued for Data Engineers (55%).
 For Data Analysts, SQL remains the primary skill, while Python, though useful, is less prominent than in the other two roles.
+
+
+## 2. How are in-demand skills trending for Data Analysts?
+
+
+
+### Visualise Data
+
+```python
+from matplotlib.ticker import PercentFormatter
+ax = plt.gca()
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+offsets = [-1, 0.05, 1, -0.05, 0.02]
+for i in range (5):
+    y_val = df_plot.iloc[-1, i] + offsets[i]
+    plt.text(11.1, y_val, df_plot.columns[i])
+plt.show()
+
+```
+
+
+### Results
+
+![Visualisation for trending skills](3_Project/images/skill_in_postings.png)
+
+
+### Insights
+
+ - SQL & Excel remain both highly sort after skills throughout 2023.
+ - SQL in-particular shows to be in decline towards the end of 2023.
+ -Python shows a strong up-trend towards the end of 2023 along with Tableau.
+
+ This offers an in-sight to where somebody trying to up-skill into the Data  Industry should focus their attention.
