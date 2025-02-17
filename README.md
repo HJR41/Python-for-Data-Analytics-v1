@@ -83,4 +83,4 @@ plt.show()
  - SQL in-particular shows to be in decline towards the end of 2023.
  -Python shows a strong up-trend towards the end of 2023 along with Tableau.
 
- This offers an in-sight to where somebody trying to up-skill into the Data  Industry should focus their attention.
+ This offers an in-sight to where somebody trying to up-skill into the Data  Industry should focus their attention. 
